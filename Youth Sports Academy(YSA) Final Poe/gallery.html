@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mongezo Nxumalo">
+    <meta name="keywords" content="youth sports academy, gallery lightbox">
+    <meta name="description" content="pictures,html,css,javaScripts">
+    <title>Gallery - Youth Sports Academy</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="LOGO">
+            <img src="images/LOGO.png" alt="Logo" style="width:50px; height:50px;">
+            <ul>
+                <button><a href="home.html">Home</a></button>
+                <button><a href="about.html">About Us</a></button>
+                <button><a href="product.html">Products & Services</a></button>
+                <button><a href="news.html">News</a></button>
+                <button><a href="contact.html">Contact</a></button>
+                <button><a href="gallery.html">Gallery</a></button>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div class="main-content">
+        <h1>Youth Sport Academy Photo Gallery</h1> 
+        <p><marquee>Click on any image to view it in the lightbox.</marquee></p> 
+        <!-- Gallery Section -->
+      <div class="gallery">
+           <div class="gallery-item" onclick="openLightbox(0)">
+           <img src="images/10.jpg" alt="Soccer">
+      </div>
+       <div class="gallery-item" onclick="openLightbox(1)">
+              <img src="images/20.jpg" alt="Basketball">
+       </div>
+       <div class="gallery-item" onclick="openLightbox(2)">
+		    <img src="images/30.jpg" alt="Atletics">
+       </div>
+      <div class="gallery-item" onclick="openLightbox(3)">
+            <img src="images/40.jpg" alt="Tracks">
+    </div>
+</div>
+
+
+          <!-- Lightbox -->
+   <div class="lightbox" id="lightbox">
+      <span class="close-btn" onclick="closeLightbox()">&times;</span>
+       <button class="prev-btn" onclick="changeImage(-1)">&#10094;</button>
+    <div class="lightbox-content">
+        <img id="lightbox-img" src="" alt="">
+    </div>
+      <div class="lightbox-caption" id="lightbox-caption"></div>
+    <button class="next-btn" onclick="changeImage(1)">&#10095;</button>
+</div>
+
+</main>
+
+<footer>
+    <p>&copy; ST10483436</p>
+</footer>
+
+<script src="Javascripts/scripts.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Mongezo Nxumalo">
+    <meta name="keywords" content="youth sports academy, sports programs, football training, basketball clinics, athletics, youth development, fitness, sports coaching">
+    <meta name="description" content="Youth Sports Academy (YSA) is a non-profit organization offering sports programs for youth. We focus on football, basketball, and athletics to help kids thrive through teamwork and fitness.">
+	
+    <title>Home Page - Youth Sports Academy</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="LOGO">
+            <img src="images/LOGO.png" alt="Logo" style="width:50px; height:50px;">
+            
+            <ul>
+			    <button><a href="home.html">Home</a></button>
+                <button><a href="about.html">About Us</a></button>
+                <button><a href="product.html">Products & Services</a></button>
+                <button><a href="news.html">News</a></button>
+                <button><a href="contact.html">Contact</a></button>
+				<button><a href="gallery.html">Gallery</a></button>
+            </ul>
+        </div>
+        
+        <div class="top-right">
+            <input class="srch" type="search" id="searchInput" placeholder="Type to search" oninput="searchFunction()">
+            <button class="btn" onclick="searchFunction()">Search</button>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <h1><u><i> YOUTH SPORTS ACADEMY(YSA)</i></u></h1>
+    <p>
+        Welcome to Youth Sports Academy, a non-profit organization dedicated
+        to empowering young athletes. Through structured sports programs, we nurture
+        discipline and teamwork, helping youth thrive both on the field and in life.
+    </p>
+
+    <img src="images/footballers.jpg" alt="Playing Soccer" width="500">
+
+    <h1>Empowering Youth Through Sports</h1>
+    <p>
+        Join our community sports program to stay active, learn teamwork, and have fun!  
+        Become a sponsor and support our mission.
+    </p>
+
+    <h2>Sign Up for Our Program</h2>
+    <p>Fill out the form below to join our youth sports community!</p>
+
+    <div class="form">
+        <form id="loginForm">
+            <h2>Login Here</h2>
+
+            <input type="email" name="email" placeholder="Enter email here" required>
+            <input type="password" name="password" placeholder="Enter password here" required>
+
+            <a href="product.html" class="btn">Login</a>
+
+            <p class="link">Don't have an account? <a href="#">Sign up here</a></p>
+
+            <p class="Liw">Login with:</p>
+            
+            <!-- Social media login icons -->
+            <div class="icon">
+                <a href="https://www.facebook.com/login" target="_blank">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+                <a href="https://twitter.com/login" target="_blank">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+                <a href="https://www.instagram.com/accounts/login/" target="_blank">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+            </div>
+        </form>
+    </div>
+
+    <video width="600" height="400" controls>
+        <source src="images/video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</main>
+
+<footer>
+    <p>&copy; ST10483436</p>
+</footer>
+
+<script src="Javascripts/scripts.js"></script>
+</body>
+</html>
+
+
